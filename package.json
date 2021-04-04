@@ -10,7 +10,11 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node ./dist/main.js",
-    "test": "jest"
+    "predev": "tsc",
+    "dev": "nodemon --config nodemon.json src/main.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/main.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,19 @@
   "dependencies": {
     "@google-cloud/logging-winston": "^4.0.4",
     "express": "^4.17.1",
-    "typescript": "^4.2.3",
     "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }

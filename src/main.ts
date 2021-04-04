@@ -1,7 +1,9 @@
-export const greeter = (person: string): string => {
-    return "Hello, " + person;
+import { logger } from "./loaders/logger";
+
+export const greetings = (person: string): string => {
+    return `Hello ${person}. How are you?`;
 }
 
 let user = "Jane";
 
-console.log(greeter(user));
+logger.info(greetings(user));
