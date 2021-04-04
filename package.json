@@ -1,0 +1,18 @@
+{
+  "name": "gcp-logging",
+  "version": "1.0.0",
+  "description": "Test of Google Cloud Logging with the Winston Library",
+  "main": "./dist/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://derrick.a.cheek@gmail.com@source.developers.google.com:2022/p/logging-test-309301/r/gcp-logging"
+  },
+  "author": "Derrick Anderson",
+  "license": "MIT"
+}
