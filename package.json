@@ -7,6 +7,9 @@
     "test": "test"
   },
   "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node ./dist/main.js",
     "test": "jest"
   },
   "repository": {
@@ -14,5 +17,11 @@
     "url": "https://source.cloud.google.com/logging-test-309301/gcp-logging/"
   },
   "author": "Derrick Anderson",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/logging-winston": "^4.0.4",
+    "express": "^4.17.1",
+    "typescript": "^4.2.3",
+    "winston": "^3.3.3"
+  }
 }
