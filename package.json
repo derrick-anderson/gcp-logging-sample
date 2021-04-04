@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://derrick.a.cheek@gmail.com@source.developers.google.com:2022/p/logging-test-309301/r/gcp-logging"
+    "url": "https://source.cloud.google.com/logging-test-309301/gcp-logging/"
   },
   "author": "Derrick Anderson",
   "license": "MIT"
