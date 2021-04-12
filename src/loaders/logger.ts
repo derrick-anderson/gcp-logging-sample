@@ -6,6 +6,9 @@ let gcpLogger = new LoggingWinston();
 export const logger = createLogger({
     level: 'silly',
     defaultMeta: { service: 'gcp-logging' },
+    transports: [
+        gcpLogger
+    ]
 });
 
 if(process.env.NODE_ENV != 'production'){

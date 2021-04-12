@@ -4,3 +4,6 @@
 
 # Jest
 **/coverage
+
+# Secrets
+**/gcp-keys.json

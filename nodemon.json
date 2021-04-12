@@ -1,12 +1,12 @@
 {
     "restartable": "rs",
     "ignore": [".git", "node_modules/", "dist/", "coverage"],
-    "watch": ["src/", "test/"],
-    "execMap": {
-        "ts": "node -r ts-node/register"
-      },
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "ext": "js,json,ts"
+    "watch": ["src/"],
+    "exec": "npm start",
+    "env": {
+      "NODE_ENV": "development",
+      "GOOGLE_APPLICATION_CREDENTIALS": "gcp-keys.json",
+      "PROJECT_ID": "logging-test-309301"
+    },
+    "ext": "ts"
 }
