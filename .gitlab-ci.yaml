@@ -1,0 +1,17 @@
+image: node:latest
+
+cache:
+  paths: 
+    - node_modules/
+
+before_all:
+  script: 
+    - npm install
+
+build:
+  script: 
+    - npm build
+
+test:
+  script:
+    - npm test
